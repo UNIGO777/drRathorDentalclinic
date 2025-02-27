@@ -15,11 +15,9 @@
   },
   "type": "module",
   "scripts": {
-    "build": "vite build --rollupOptions.external=framer-motion",
-    "dev": "vite",
-    "inline": "INLINE=true vite build --rollupOptions.external=framer-motion",
-    "preview": "vite preview",
-    "start": "vite start"
+     "dev": "vite",
+  "build": "vite build",
+  "start": "vite preview"
   },
   "browserslist": {
     "production": [
