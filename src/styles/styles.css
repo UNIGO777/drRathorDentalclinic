@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Pacifico&display=swap');
 @layer base {
   h1 {
     @apply text-2xl;
@@ -9,6 +10,8 @@
     @apply text-blue-500 underline underline-offset-2;
   }
 }
+
+
 
 @layer components {
   .btn {
@@ -32,4 +35,19 @@
   .text-shadow {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   }
+}
+
+
+
+
+.cedarville-cursive-regular {
+  font-family: "Cedarville Cursive", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pacifico-regular {
+  font-family: "Pacifico", serif;
+  font-weight: 100;
+  font-style: normal;
 }
