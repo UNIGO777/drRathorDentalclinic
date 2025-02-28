@@ -6,7 +6,8 @@ const Footer = () => {
 
   return (
     <>
-    <div className="bg-gradient-to-r md:pb-10  from-[#25255d] to-[#0b0b37] text-white md:py-10 px-5 md:px-10 lg:px-0">
+    <div className="bg-gradient-to-r md:pb-10 relative  from-[#25255d] to-[#0b0b37] text-white md:py-10 px-5 md:px-10 lg:px-0">
+   
     <motion.footer
       ref={ref}
       initial={{ opacity: 0, y: 50 }}
@@ -41,11 +42,13 @@ const Footer = () => {
               </svg>
               <span className="text-lg sm:text-xl lg:text-2xl text-white font-bold no-underline mt-2 md:mt-0 md:ml-2">RathoreDental<span className='text-[#5e5eee] pacifico-regular text-xl sm:text-2xl lg:text-3xl'>care</span></span>
           </h2>
-          <p className="text-white  mt-3 lgxt-sm">
-            Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document.
+          <p className="text-white mt-3 lgxt-sm">
+            At Rathore Dental Clinic, we are dedicated to providing exceptional dental care tailored to your needs. Our experienced team utilizes the latest technology and techniques to ensure your comfort and satisfactions, helping you achieve a healthy, beautiful smile.
           </p>
-          <p className="mt-3 text-sm font-semibold">support@domain.com</p>
-          <p className="text-sm font-semibold">(+0)789345601</p>
+          <p className="mt-3 text-sm font-semibold">rathoredentalclinic@gmail.com</p>
+          <p className="text-sm font-semibold">881 888 7752</p>
+          <p className="text-sm font-semibold">754, Payalwala Market, Kachhiyana chowk, Gol bazar, Jabalpur 482002</p>
+          
         </motion.div>
 
         {/* Quick Links */}
@@ -54,14 +57,22 @@ const Footer = () => {
           initial={{ opacity: 0, x: -30 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}
           transition={{ delay: 0.4 }}
-          className=" md:text-center"
+          className=" md:text-center md:ml-20"
         >
-          <h3 className="text-xl font-bold mb-3">Quick Links</h3>
+          <h3 className="text-xl font-bold  mb-3">Quick Links</h3>
           <ul className="space-y-2 text-white  text-lg">
-            <li className="hover:text-[#A685FF] transition cursor-pointer">Home</li>
-            <li className="hover:text-[#A685FF] transition cursor-pointer">About Us</li>
-            <li className="hover:text-[#A685FF] transition cursor-pointer">Services</li>
-            <li className="hover:text-[#A685FF] transition cursor-pointer">Appointment</li>
+            <li className=" transition cursor-pointer">
+              <a href="/" className="cursor-pointer hover:text-[#A685FF]">Home</a>
+            </li>
+            <li className="hover:text-[#A685FF] transition cursor-pointer">
+              <a href="/about" className="cursor-pointer hover:text-[#A685FF]">About Us</a>
+            </li>
+            <li className="hover:text-[#A685FF] transition cursor-pointer">
+              <a href="/services" className="cursor-pointer hover:text-[#A685FF]">Services</a>
+            </li>
+            <li className="hover:text-[#A685FF] transition cursor-pointer">
+              <a href="/appointment" className="cursor-pointer hover:text-[#A685FF]">Appointment</a>
+            </li>
           </ul>
         </motion.div>
 
@@ -72,7 +83,7 @@ const Footer = () => {
           transition={{ delay: 0.6 }}
           className=" md:text-center"
         >
-          <h3 className="text-xl font-bold mb-3">Socials</h3>
+          <h3 className="text-xl  font-bold mb-3">Socials</h3>
           <ul className="space-y-2 text-white  text-lg">
             <li className="hover:text-[#A685FF] transition cursor-pointer">Facebook</li>
             <li className="hover:text-[#A685FF] transition cursor-pointer">Twitter</li>
