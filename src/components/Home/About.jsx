@@ -5,8 +5,12 @@ import { useInView } from 'react-intersection-observer';
 import { Plus } from 'lucide-react';
 
 const About = () => {
-    const [ref1, inView1] = useInView({ threshold: 0.1 });
-    const [ref2, inView2] = useInView({ threshold: 0.1 });
+    const [ref1, inView1] = useInView({ threshold: 0.1,
+        triggerOnce: true   
+     });
+    const [ref2, inView2] = useInView({ threshold: 0.1,
+        triggerOnce: true
+     });
 
     return (
         <div className="py-8  sm:py-12 md:py-16 bg-white">
