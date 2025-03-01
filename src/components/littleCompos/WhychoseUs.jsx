@@ -55,7 +55,7 @@ const WhyChooseUs = () => {
                             Providing comprehensive dental care with proven, effective treatment plans, helping to maintain and establish confidence in life's simple smiles.
                         </p>
                         <motion.button 
-                            whileHover={{ scale: 1.05 }}
+                            whileHover={{ scale: 0.05 }}
                             whileTap={{ scale: 0.95 }}
                             className="bg-[#5e5eee] text-white px-6 py-3 rounded-full hover:bg-[#4b4bdd] transition duration-300"
                         >
@@ -83,7 +83,7 @@ const WhyChooseUs = () => {
                         </div>
                     </motion.div>
 
-                    <motion.div
+                    <div
                         ref={ref2}
                         initial={{ opacity: 0, x: 50 }}
                         animate={{ opacity: inView2 ? 1 : 0, x: inView2 ? 0 : 50 }}
@@ -91,7 +91,7 @@ const WhyChooseUs = () => {
                         className="w-full lg:w-1/2"
                     >
                         <div className="space-y-6">
-                            <motion.div 
+                            <div 
                                 ref={ref3}
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: inView3 ? 1 : 0, y: inView3 ? 0 : 20 }}
@@ -100,21 +100,21 @@ const WhyChooseUs = () => {
                                 className=" p-6 rounded-xl shadow-lg"
                             >
                                 <div className="flex items-center gap-4">
-                                    <motion.div 
+                                    <div 
                                         whileHover={{ rotate: 10 }}
                                         className="bg-[#5e5eee] p-3 rounded-lg"
                                     >
                                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                                         </svg>
-                                    </motion.div>
+                                    </div>
                                     <div>
                                         <h3 className="text-xl font-semibold text-white">Emergency Services</h3>
                                         <p className="text-gray-300">Prompt and reliable emergency dental care, available when you need it.</p>
                                     </div>
                                 </div>
-                            </motion.div>
-                            <motion.div 
+                            </div>
+                            <div 
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: inView3 ? 1 : 0, y: inView3 ? 0 : 20 }}
                                 whileHover={{ scale: 1.02 }}
@@ -122,21 +122,21 @@ const WhyChooseUs = () => {
                                 className=" p-6 py-8  shadow-lg border-b border-t border-gray-200/50"
                             >
                                 <div className="flex items-center gap-4">
-                                    <motion.div 
+                                    <div 
                                         whileHover={{ rotate: -10 }}
                                         className="bg-[#5e5eee] p-3 rounded-lg"
                                     >
                                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4.318a4.5 4.5 0 016.364 0L20.364 6.318a4.5 4.5 0 010 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 010-6.364L5.636 4.318a4.5 4.5 0 016.364 0z" />
                                         </svg>
-                                    </motion.div>
+                                    </div>
                                     <div>
                                         <h3 className="text-xl font-semibold text-white">Comprehensive Care</h3>
                                         <p className="text-gray-300">Offering a wide range of dental services to meet all your oral health needs.</p>
                                     </div>
                                 </div>
-                            </motion.div>
-                            <motion.div 
+                            </div>
+                            <div 
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: inView3 ? 1 : 0, y: inView3 ? 0 : 20 }}
                                 whileHover={{ scale: 1.02 }}
@@ -144,22 +144,22 @@ const WhyChooseUs = () => {
                                 className=" p-6 rounded-xl shadow-lg "
                             >
                                 <div className="flex items-center gap-4">
-                                    <motion.div 
+                                    <div 
                                         whileHover={{ rotate: 10 }}
                                         className="bg-[#5e5eee] p-3 rounded-lg"
                                     >
                                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 2a10 10 0 100 20 10 10 0 000-20zm-1 15h-2v-2h2v2zm0-4h-2V7h2v6zm4 4h-2v-2h2v2zm0-4h-2V7h2v6z" />
                                         </svg>
-                                    </motion.div>
+                                    </div>
                                     <div>
                                         <h3 className="text-xl font-semibold text-white">Preventive Care</h3>
                                         <p className="text-gray-300">Regular check-ups and cleanings to maintain optimal oral health and prevent issues.</p>
                                     </div>
                                 </div>
-                            </motion.div>
+                            </div>
                         </div>
-                    </motion.div>
+                    </div>
                 </div>
             </div>
         </div>

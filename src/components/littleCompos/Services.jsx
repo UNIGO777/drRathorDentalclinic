@@ -28,7 +28,7 @@ const ServiceCard = ({ title, description, image, Svg }) => {
             transition={{ duration: 0.8 }}
             onMouseEnter={() => setMouseEntered(true)}
             onMouseLeave={() => setMouseEntered(false)}
-            whileHover={{ scale: 3, cursor: 'pointer' }}
+            whileHover={{ scale: 1.03, cursor: 'pointer' }}
             className="bg-white rounded-4xl  p-8 py-10  shadow-lg hover:shadow-xl transition-shadow duration-300"
         >
             <div className="space-y-4">

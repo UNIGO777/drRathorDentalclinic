@@ -34,10 +34,10 @@ const Tranformations = () => {
                                 <stop offset="1" stopColor="#0B0B38" />
                             </linearGradient>
                         </defs>
-                    </svg>OUR SERVICES</h2>
+                    </svg>SEE THE TRANSFORMATION</h2>
                     <div className='flex flex-col  md:flex-row justify-between md:items-center '>
                         <p className="mt-2 text-4xl md:w-[70%] font-bold text-black sm:text-[3em]">
-                            Comprehensive dental care tailored services for every smile
+                        Stunning results that showcase the life changing impact
                         </p>
 
                         <motion.button
