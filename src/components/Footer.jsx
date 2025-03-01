@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
+import { Mail, Phone } from "lucide-react";
 import { useInView } from "react-intersection-observer";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
@@ -16,13 +18,13 @@ const Footer = () => {
       className=" text-white py-10 px-5 md:px-10 lg:px-20"
     >
       {/* Footer Container */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3  gap-8">
         {/* Logo & Info */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}
           transition={{ delay: 0.2 }}
-          className="w-[30vw] space-y-5"
+          className="md:w-[30vw] space-y-5"
         >
            
           <h2 className="text-2xl font-bold  flex flex-col md:flex-row  md:items-center">
@@ -45,8 +47,14 @@ const Footer = () => {
           <p className="text-white mt-3 lgxt-sm">
             At Rathore Dental Clinic, we are dedicated to providing exceptional dental care tailored to your needs. Our experienced team utilizes the latest technology and techniques to ensure your comfort and satisfactions, helping you achieve a healthy, beautiful smile.
           </p>
-          <p className="mt-3 text-sm font-semibold">rathoredentalclinic@gmail.com</p>
-          <p className="text-sm font-semibold">881 888 7752</p>
+          <a href="mailto:rathoredentalclinic@gmail.com" className="mt-3 hover:text-[#A685FF] text-sm font-semibold flex items-center">
+            <Mail className="w-5 h-5 mr-2" />
+            rathoredentalclinic@gmail.com
+          </a>
+          <a href="tel:8818887752" className="text-sm mt-3 font-semibold hover:text-[#A685FF] flex items-center">
+            <Phone className="w-5 h-5 mr-2" />
+            881 888 7752
+          </a>
           <p className="text-sm font-semibold">754, Payalwala Market, Kachhiyana chowk, Gol bazar, Jabalpur 482002</p>
           
         </motion.div>
@@ -60,18 +68,18 @@ const Footer = () => {
           className=" md:text-center md:ml-20"
         >
           <h3 className="text-xl font-bold  mb-3">Quick Links</h3>
-          <ul className="space-y-2 text-white  text-lg">
-            <li className=" transition cursor-pointer">
-              <a href="/" className="cursor-pointer hover:text-[#A685FF]">Home</a>
+          <ul className="space-y-2 text-white text-lg">
+            <li className="transition cursor-pointer">
+              <Link to="/" className="cursor-pointer hover:text-[#A685FF]">Home</Link>
             </li>
             <li className="hover:text-[#A685FF] transition cursor-pointer">
-              <a href="/about" className="cursor-pointer hover:text-[#A685FF]">About Us</a>
+              <Link to="/about" className="cursor-pointer hover:text-[#A685FF]">About Us</Link>
             </li>
             <li className="hover:text-[#A685FF] transition cursor-pointer">
-              <a href="/services" className="cursor-pointer hover:text-[#A685FF]">Services</a>
+              <Link to="/services" className="cursor-pointer hover:text-[#A685FF]">Services</Link>
             </li>
             <li className="hover:text-[#A685FF] transition cursor-pointer">
-              <a href="/appointment" className="cursor-pointer hover:text-[#A685FF]">Appointment</a>
+              <Link to="/appointment" className="cursor-pointer hover:text-[#A685FF]">Appointment</Link>
             </li>
           </ul>
         </motion.div>
@@ -93,20 +101,7 @@ const Footer = () => {
         </motion.div>
 
         {/* Services */}
-        <motion.div
-          initial={{ opacity: 0, x: 30 }}
-          animate={inView ? { opacity: 1, x: 0 } : {}}
-          transition={{ delay: 0.8 }}
-          className=" md:text-center"
-        >
-          <h3 className="text-xl font-bold mb-3">Our Services</h3>
-          <ul className="space-y-2 text-white  text-lg">
-            <li className="hover:text-[#A685FF] transition cursor-pointer">General Dentistry</li>
-            <li className="hover:text-[#A685FF] transition cursor-pointer">Cosmetic Dentistry</li>
-            <li className="hover:text-[#A685FF] transition cursor-pointer">Restorative Dentistry</li>
-            <li className="hover:text-[#A685FF] transition cursor-pointer">Routine Cleanings</li>
-          </ul>
-        </motion.div>
+       
       </div>
 
       {/* Bottom Section */}
@@ -118,6 +113,7 @@ const Footer = () => {
       >
         <hr className="border-gray-600 mb-4" />
         <p>Copyright © 2025 All Rights Reserved.</p>
+        <p>Created by <a href="https://naman-web.netlify.app" target="_blank" className="text-[#A685FF] hover:underline">Naman Jain</a> in collaboration with <a href="#" target="_blank" className="text-[#A685FF] hover:underline">ewith</a></p>
       </motion.div>
     </motion.footer>
     </div>

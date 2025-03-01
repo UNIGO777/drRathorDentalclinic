@@ -73,14 +73,7 @@ const Testimonials = () => {
                             Real stories of exceptional care and transformative smiles
                         </h2>
 
-                        <motion.button
-                            whileHover={{ backgroundColor: 'black', cursor: 'pointer' }}
-                            transition={{ duration: 0.1 }}
-                            className="w-fit md:w-auto bg-[#5e5eee] max-h-15 flex items-center justify-center text-white hover:border-2 hover:border-white px-3 sm:px-4 md:px-6 lg:px-8 py-2 sm:py-3 lg:py-4 font-bold rounded-full text-xs sm:text-sm md:text-base hover:bg-[black] cursor-pointer transition-colors duration-300"
-                        >
-                            Contact Us Now
-                            <Plus className='ml-2 sm:ml-3 font-bold w-3 h-3 sm:w-4 sm:h-4 lg:w-5 lg:h-5' strokeWidth={3} />
-                        </motion.button>
+                        
                     </div>
                 </motion.div>
 

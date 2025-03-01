@@ -169,14 +169,15 @@ const Hero = () => {
 
                     <span className='hidden lg:block border-r border-gray-300 h-20'/>
 
-                    <motion.button 
+                    <motion.a 
+                        href="/contact" 
                         whileHover={{backgroundColor: 'black', cursor: 'pointer'}} 
                         transition={{duration: 0.1}} 
                         className="w-full lg:w-auto bg-[#5e5eee] flex items-center justify-center text-white px-6 sm:px-8 lg:px-10 py-3 sm:py-4 font-bold rounded-full text-sm sm:text-base hover:bg-[black] cursor-pointer transition-colors duration-300"
                     >
                         Make An Appointment
                         <ArrowRight className='ml-2 font-bold w-4 h-4 sm:w-5 sm:h-5 mr-2'/>
-                    </motion.button>
+                    </motion.a>
                 </div>
             </motion.div>
         </div>

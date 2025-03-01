@@ -54,13 +54,7 @@ const WhyChooseUs = () => {
                         <p className="text-gray-400 mb-6">
                             Providing comprehensive dental care with proven, effective treatment plans, helping to maintain and establish confidence in life's simple smiles.
                         </p>
-                        <motion.button 
-                            whileHover={{ scale: 0.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            className="bg-[#5e5eee] text-white px-6 py-3 rounded-full hover:bg-[#4b4bdd] transition duration-300"
-                        >
-                            Get Started
-                        </motion.button>
+                        
                     </motion.div>
 
                     <motion.div
